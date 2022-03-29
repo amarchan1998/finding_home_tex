@@ -1,0 +1,43 @@
+\documentclass[../main.tex]{subfiles}
+% Tabla 1, editada del stargazer
+\begin{document}
+\begin{table}[H]\centering 
+ \caption{Models considering economic, political and cultural indicators} 
+   \label{tab:1} 
+  \scriptsize
+ \begin{tabular}{@{\extracolsep{5pt}}lcccccc}
+ \toprule 
+\\[-1.8ex] & \multicolumn{6}{c}{International Migrant Stock (\% of population)} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\ 
+\midrule \\[-1.8ex] 
+ Intercept & $-$47.162$^{\star\star\star}$ & $-$30.467$^{\star\star\star}$ & $-$41.892$^{\star\star\star}$ & $-$29.384$^{\star\star\star}$ & $-$39.272$^{\star\star\star}$ & $-$42.452$^{\star\star\star}$ \\ 
+  & (8.110) & (9.265) & (10.905) & (8.613) & (11.966) & (13.830) \\ 
+  Ln GDP per Capita & 6.425$^{\star\star\star}$ & 5.184$^{\star\star\star}$ & 6.364$^{\star\star\star}$ & 4.727$^{\star\star\star}$ & 5.236$^{\star\star\star}$ & 5.914$^{\star\star\star}$ \\ 
+  & (1.045) & (1.162) & (1.317) & (1.003) & (1.201) & (1.345) \\ 
+  Unemployment & $-$0.371$^{\star\star}$ & $-$0.200 & $-$0.217 & $-$0.247$^{\star}$ & $-$0.169 & $-$0.079 \\ 
+  & (0.154) & (0.146) & (0.160) & (0.148) & (0.147) & (0.181) \\ 
+  Days to Start a Business & $-$0.052$^{\star\star\star}$ & $-$0.083$^{\star\star\star}$ & $-$0.082$^{\star\star\star}$ & $-$0.061$^{\star\star}$ & $-$0.076$^{\star\star}$ & $-$0.071$^{\star\star}$ \\ 
+  & (0.019) & (0.027) & (0.029) & (0.025) & (0.032) & (0.034) \\ 
+  Control of Corruption &  & 3.536$^{\star\star\star}$ & 3.380$^{\star\star\star}$ & 4.372$^{\star\star\star}$ & 4.392$^{\star\star\star}$ & 4.628$^{\star\star\star}$ \\ 
+  &  & (1.249) & (1.271) & (1.135) & (1.162) & (1.469) \\ 
+  Democracy &  & $-$1.196$^{\star\star\star}$ & $-$1.136$^{\star\star\star}$ & $-$0.811$^{\star\star\star}$ & $-$0.942$^{\star\star\star}$ & $-$0.918$^{\star\star\star}$ \\ 
+  &  & (0.277) & (0.278) & (0.199) & (0.208) & (0.189) \\ 
+  Lower Mig. Policy  &  &  & 6.056$^{\star}$ & 1.423 & 0.708 & 0.380 \\ 
+  &  &  & (3.500) & (3.460) & (3.627) & (3.619) \\ 
+  Raise Mig. Policy  &  &  & $-$5.964$^{\star\star}$ & $-$5.037$^{\star\star}$ & $-$3.208$^{\star}$ & $-$2.487 \\ 
+  &  &  & (2.374) & (2.066) & (1.768) & (1.709) \\ 
+  MENA &  &  &  & 16.228$^{\star\star\star}$ & 15.643$^{\star\star\star}$ & 17.417$^{\star\star\star}$ \\ 
+  &  &  &  & (5.231) & (5.226) & (6.356) \\ 
+  Ethnic Diversity &  &  &  &  & 0.114$^{\star\star}$ & 0.134$^{\star\star\star}$ \\ 
+  &  &  &  &  & (0.048) & (0.051) \\ 
+  Government Exp. (\% of GDP) &  &  &  &  &  & $-$0.336 \\ 
+  &  &  &  &  &  & (0.318) \\ 
+ \midrule \\[-2.5ex] 
+Observations & 172 & 152 & 130 & 130 & 115 & 109 \\ 
+Adjusted R$^{2}$ & 0.319 & 0.501 & 0.556 & 0.632 & 0.670 & 0.674 \\ 
+\bottomrule \\[-1.8ex] 
+\multicolumn{7}{l}{\textit{Note}: Heteroskedasticity robust standard errors with sample correction reported in parentheses. $^{\star}$p$<$0.1; $^{\star\star}$p$<$0.05; $^{\star\star\star}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+\end{document}

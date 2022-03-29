@@ -1,0 +1,16 @@
+\documentclass[../main.tex]{subfiles}
+% Enfoque Empírico
+\begin{document}
+\section{EMPIRICAL APPROACH}
+Many different sources on our everyday life cite different reasons on why people migrate, and many times is not just a matter of physical distance. Thus, as said before, in contrast with the existing literature, I do not study migration between a group of countries such as the European Union or the OECD. Rather, I use a single year cross section for 2015, and through OLS estimation, relationships between the migrant stocks in countries and other national indicators are studied. I expand the analysis to worldwide migrant flows, moving away from the importance of distance, thus having results valid for all countries. The estimated models part from the following general functional form: 
+\begin{equation}
+    IMS=\beta_0+\beta_1 \ln(GDP_{PC}) + \beta_2 (\text{Days to start a business})+ \sum_{j=1}^k \beta_j\hspace{0.05cm} x_j+u
+    \label{eqn:1}
+\end{equation}
+
+The variable of interest studied in the models is International Migrant Stock ($IMS$) from the World Bank Data, which measures the percentage of people that were born in a different country than in which they live, including refugees \parencite{WorldBankGroup.2020}. Naturally, it would be expected that more desirable destinies for migrants have larger migrant stocks.
+
+All models estimated consider two controls: the natural logarithm of GDP per capita and the days required to start a business. GDP or income per capita here is measured in 2017 PPP dollars, in order to better account for purchasing power differences between countries. The days to start a business proxies economic freedom, which is suggested to be an important control by \textcite{Prada.2020}. Further models consider $k$ other covariates ($x_j$), which are thought to affect migration too. I explore macroeconomic aggregates, data on immigration policy, demography, democracy, and culture. The main data source for my analysis is the World Bank Dataset, but also other sources for some covariates. All variables used are described in Appendix \hyperref[sec:A]{A}, along with their sources. The next section reports tables with OLS estimations of the empirical models, along with heteroskedasticity robust standard errors, with sample corrections.  
+
+
+\end{document}

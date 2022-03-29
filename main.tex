@@ -1,0 +1,101 @@
+\documentclass[longtable,floatsintext,man]{apa7} % Una clase de documento especial para cumplir con APA
+% Modo man hace que sea como un manuscrito tipo APA, sirve para las tesis
+% Opción floatsintext permite ubicar figuras y tablas directamente en donde se invoca el código
+% Longtable como opción más que paquete por conflicto con el float
+% Parámetros iniciales necesarios para que no haya errores
+
+
+
+\title{Finding Home in Exile: Perspectives on Migration Empirics}
+\shorttitle{}
+\author{Alejandra Marchán}
+\date{}
+
+% Para Times New Roman, solo sirve con XeLaTeX
+\usepackage{mathspec}
+\setallmainfonts(Digits,Greek,Latin){Times New Roman}
+% Para matemáticas, cargar después de los fondos
+\usepackage{amsfonts,amsmath,amssymb} 
+
+% Otros para la
+\setlength{\parindent}{0.5in} % Sangría de media pulgada
+\setlength{\parskip}{0.25cm} % Espaciado de párrafos igual al espaciado de doble línea
+
+% Cambiando el título y poniendo en mayúsculas los títulos de los índices
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+\renewcommand{\listtablename}{INDEX OF TABLES}
+\renewcommand{\listfigurename}{INDEX OF FIGURES}
+
+% Paquetes para manejo de figuras y tablas
+\usepackage{lscape} % Cambiar orientación
+\usepackage{graphicx} % Para mejor manejo de fotos
+\usepackage{float} % Posicionamiento de tablas y figuras (opción H)
+\usepackage{caption} % Manejo avanzado de captions
+\usepackage{subcaption} % para subfiguras
+%\usepackage{dcolumn} % Tablas de stargazer piden este paquete
+\usepackage{booktabs} % Para líneas mejores
+
+
+% Bibliografías con BibLaTeX
+\usepackage[backend=biber, style=apa, citestyle=apa]{biblatex}
+    \addbibresource{refs.bib}
+\usepackage{csquotes} % Para comillas
+
+% Otros paquetes
+\usepackage{ragged2e} % Para justificar a veces
+\usepackage{lipsum} % Dummy text
+
+% Para crear un documento sin partición de palabras en una nueva línea
+\newenvironment{nohyphens}{%
+  \par
+  \hyphenpenalty=10000
+  \exhyphenpenalty=10000
+  \sloppy % Makes TeX obey margins by stretching inter word spaces
+}{\par}
+
+
+% Estos paquetes siempre al final
+\usepackage{hyperref} % Para hacer hipervínculos y referencias cruzadas con link
+\usepackage{subfiles} % Compilar multiarchivos
+
+\begin{document}
+% Llamar a subfiles con el comando \subfile
+\subfile{prelim/portada}
+\clearpage % No contiene clearpage dentro del subpage, hace falta poner
+\subfile{prelim/hoja_calificacion}
+\justifying
+\clearpage 
+\subfile{prelim/derechos}
+\clearpage
+\subfile{prelim/agradecimientos}
+\clearpage
+\subfile{prelim/abstract_ambos}
+\clearpage
+\tableofcontents % Tabla de contenidos
+\clearpage
+\listoftables % Índice de tablas
+\clearpage
+\listoffigures % Tabla de figuras
+\clearpage
+\subfile{sections/1-introduction}
+\clearpage
+\subfile{sections/2-literature_review}
+\clearpage
+\subfile{sections/3-empirical_ap}
+\clearpage
+\subfile{sections/4.1-results}
+\subfile{sections/4.2-results}
+\clearpage
+\subfile{sections/5-conclusions}
+\clearpage
+\subfile{sections/references}
+\clearpage
+\subfile{appendices/A}
+\clearpage
+\subfile{appendices/B}
+\clearpage
+\subfile{appendices/C-text}
+\clearpage
+\subfile{appendices/C-tab}
+
+\end{document}

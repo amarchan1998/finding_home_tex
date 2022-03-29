@@ -1,0 +1,36 @@
+\documentclass[../main.tex]{subfiles}
+% Anexo B: Variables
+\begin{document}
+\section{APPENDIX A: VARIABLES USED IN THE STUDY}
+\label{sec:A}
+\footnotesize
+\begin{longtable}{p{0.15\linewidth}|p{0.25\linewidth}|p{0.15\linewidth}|p{0.30\linewidth}} 
+\caption{Variable descriptions} \\
+\toprule \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} & \multicolumn{1}{c}{\textbf{Source}} & \multicolumn{1}{c}{\textbf{Note}}\\ \midrule
+\endfirsthead
+\multicolumn{4}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\midrule \multicolumn{1}{c}{\textbf{Variable}} & \multicolumn{1}{c}{\textbf{Description}} & \multicolumn{1}{c}{\textbf{Source}} & \multicolumn{1}{c}{\textbf{Note}}\\ \midrule
+\endhead
+
+\midrule \multicolumn{3}{r}{{Continued on next page}} \\ \midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+International Migrant Stock (\% of total population)  & The number of people born in a country other than that in which they live, includes refugees.                                                          & World Development Indicators (World Bank)                                     &                                                                                                                                            \\ \midrule
+Democracy                        & Degree of democratic regime in a country.                                                                              & Our World in Data (2015) & Higher values imply more democratic regimes. For the choropleth map, the Political Regime from the V-Dem dataset was used to estimate a score for missing values on Sudan, Myanmar and Ethiopia. The measurement scale goes from -10 (full autocracy) to 10 (full democracy). Anocracies are those scoring
+between -5 and 5. "Colony" (coded as -20) includes not only colonies, but also countries that were not yet sovereign states. \\ \midrule
+Rich Oil Exporting Countries                         & Dummy variable for countries with over 26K in GDPPC, and oil rents over 0.27 (\% of GDP)                                        & Author's calculations                                                        & The amounts used for the dummy where based on quartile analysis on the sample values.                                                      \\ \midrule
+GDP per Capita (2017 PPP)                            & Gross domestic product converted to international dollars using purchasing power parity rates.                                                                 & World Development Indicators (World Bank)                                     &                                                                                                                                            \\ \midrule
+Days required to start a business                    & The number of days needed to complete procedures to legally operate a business.                                                                   & World Development Indicators (World Bank)                                     &                                                                                                                                            \\ \midrule
+Unemployment (modeled ILO estimate)                  & Share of the labor force that is without work but still seeking for it.                                                                               & World Development Indicators (World Bank)                                     &                                                                                                                                            \\ \midrule
+Control of Corruption                                & Captures perceptions of the extent to which public power is exercised for private gain.                                                                        & World Governance Indicators (World Bank)                                      & The documentation on the World Governance Indicators \parencite{Kaufmann.September2010} states that higher values imply better outcomes.                                                                                                        \\ \midrule
+Immigration Policy                      & Policy to maintain, raise or lower current levels of migrants.                                                                                         & Migration Data Portal (United Nations)                                        & Countries not reporting a stance are taken as missing values.                                                                              \\ \midrule
+Middle East and North Africa (MENA)                       & World region according to the World Bank. & World Development Indicators (World Bank) & See Appendix \hyperref[sec:C]{C} for list of countries included in this region.                                                                                                \\ \midrule
+Government Final Consumption Expenditure (\% of GDP) & Government current expenditure. Excludes military expenditure. & World Development Indicators (World Bank)                                     &                                                                                                                                            \\ \midrule
+Historical Index of Ethnic Fractionalization         & The probability of two randomly drawn individuals within a country are not from the same ethnic group.                                                         & Harvard Dataverse, Drazanova (2019)                                           & For the models, this variable is coded so that a 1 unit increase means a 0.01 probability increase for this draw.                                                                                                                       \\ \midrule
+Political Stability and Absence of Violence          & Measures perceptions of the likelihood of political instability and/or politically motivated violence, including terrorism.                                    & World Governance Indicators (World Bank)                                      & The documentation on the World Governance Indicators \parencite{Kaufmann.September2010} states that higher values imply better outcomes.\\
+\end{longtable}
+
+\end{document}
